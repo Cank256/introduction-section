@@ -30,18 +30,19 @@ body {
     float: left;
     margin-right: 60px;
     height: 60vh;
+    width: 45vw;
 }
 
 .text {
     display: block;
-    padding: 40px;
-    width: 80vw;
+    padding: 45px;
+    width: 83vw;
 }
 
 .text h1 {
     font-family: 'Poppins', sans-serif;
     margin-bottom: 18px;
-    width: 70vw;
+    width: 75vw;
     line-height: 1.5em;
 }
 
@@ -63,16 +64,31 @@ body {
 }
 
 .social-icons {
-    display: inline-block;
     float: right;
-    margin-right: 60px;
-    padding-right: 60px;
-    margin-bottom: 0!important;
+    margin-top: 10px;
+    margin-right: 83px;
+    padding-right: 20px;
+    margin-bottom: 0;
 }
 
-ion-icon {
-    margin-top: 10px;
+.social-icons img {
+    margin-top: 25px;
     padding-right: 20px;
-    margin-right: 0;
-    font-size: 35px;
+    height: 40px;
+    width: 40px;
+}
+
+@media only screen and (max-width: 375px) {
+    
+    body {
+        background-image: url("./images/bg-mobile.svg");
+    }
+	.container {
+		max-width: 370px;
+		margin: auto;
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+	}
+
 }
