@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+@font-face {
+    font-family: myPoppins;
+    src: url("./fonts/poppins.regular.ttf");
+    font-weight: 400, 700;
+  }
+@font-face {
+    font-family: myOpenSans;
+    src: url("./fonts/OpenSans-Regular.ttf");
+    font-weight: 400;
+}
 
 * {
     margin: 0;
@@ -10,7 +20,7 @@ body {
     background-image: url("./images/bg-desktop.svg");
     background-color: hsl(257, 40%, 49%);
     color: white;
-    font-family: 'Open Sans', sans-serif;
+    font-family: myOpenSans;
 }
 
 .container {
@@ -19,7 +29,7 @@ body {
 }
 
 #logo {
-    margin: 30px 0 0 120px;
+    margin: 60px 0 0 120px;
 }
 
 .content {
@@ -40,7 +50,7 @@ body {
 }
 
 .text h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: myPoppins;
     margin-bottom: 18px;
     width: 75vw;
     line-height: 1.5em;
@@ -50,7 +60,7 @@ body {
     margin-bottom: 15px;
     line-height: 1.7em;
     font-size: .9em;
-    padding-right: 90px;
+    padding-right: 80px;
 }
 
 .text button {
@@ -66,29 +76,26 @@ body {
 .social-icons {
     float: right;
     margin-top: 10px;
-    margin-right: 83px;
-    padding-right: 20px;
+    margin-right: 140px;
+    padding-right: 50px;
     margin-bottom: 0;
 }
 
 .social-icons img {
     margin-top: 25px;
     padding-right: 20px;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
 }
 
-@media only screen and (max-width: 375px) {
+@media (max-width: 470px) {
     
     body {
         background-image: url("./images/bg-mobile.svg");
     }
-	.container {
-		max-width: 370px;
-		margin: auto;
-		margin-top: 20px;
-		display: flex;
-		flex-direction: column;
-	}
-
+    
+    .content h1 {
+        font-size: 1.4em;
+    }
 }
+
