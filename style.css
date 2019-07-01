@@ -92,8 +92,43 @@ body {
     width: 35px;
 }
 
-@media screen and (min-width: 801px) and (max-width: 1024px) {
-    
+@media screen and (min-width: 801px) and (max-width: 1439px) {
+    .content {
+        margin: 40px 0px 10px 10%;
+        max-width: 100%;
+        flex-direction: column;
+        display: block;
+    }
+
+    .content img {
+        margin: 0;
+        width: 90%;
+        height: auto;
+    }
+
+    .text {
+        margin: 0;
+        padding: 0;
+        height: auto;
+        text-align: center;
+        width: 90%;
+
+    }
+
+    .text h1 {
+        font-size: 30px;
+    }
+
+    .text p {
+        margin-bottom: 20;
+        font-size: 20px;
+    }
+
+    .social-icons {
+        display: inline;
+        padding-bottom: 40px;
+        margin-left: 45%;
+    }
 }
 
 @media screen and (min-width: 376px) and (max-width: 800px) {
